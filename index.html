@@ -889,15 +889,15 @@ html {
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-label">Email</span>
-                            <span class="contact-value">osazedavid969@gmail.com</span>
+                            <span class="contact-value">gumbarnabas@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-label">Phone</span>
-                            <span class="contact-value">+234 913 711 1247</span>
+                            <span class="contact-value">+2349028147869</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-label">Location</span>
-                            <span class="contact-value">Gwagwalada, Abuja, Nigeria</span>
+                            <span class="contact-value">Mataima extension Lungi Barracks, Abuja, Nigeria</span>
                         </div>
                     </div>
                     <div class="social-links">
@@ -932,4 +932,5 @@ html {
         document.addEventListener('DOMContentLoaded',()=>{const hamburger=document.getElementById('hamburger');const nav=document.getElementById('nav');hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');nav.classList.toggle('active');});const navLinks=document.querySelectorAll('.nav-link');navLinks.forEach(link=>{link.addEventListener('click',e=>{e.preventDefault();const targetId=link.getAttribute('href').substring(1);const targetElement=document.getElementById(targetId);targetElement.scrollIntoView({behavior:'smooth'});if(nav.classList.contains('active')){hamburger.classList.remove('active');nav.classList.remove('active');}});});const skillBars=document.querySelectorAll('.skill-progress');const animateSkillBars=()=>{skillBars.forEach(bar=>{const rect=bar.getBoundingClientRect();if(rect.top>=0&&rect.top<=window.innerHeight*.8){const width=bar.getAttribute('data-width');bar.style.width=`${width}%`;}});};window.addEventListener('scroll',animateSkillBars);animateSkillBars();const contactForm=document.getElementById('contactForm');contactForm.addEventListener('submit',e=>{e.preventDefault();const formData=new FormData(contactForm);const data={name:formData.get('name'),email:formData.get('email'),message:formData.get('message')};console.log('Form submitted:',data);alert('Message sent successfully!');contactForm.reset();});});
     </script>
 </body>
+
 </html>
